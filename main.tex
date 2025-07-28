@@ -5,13 +5,13 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper, 11pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
 \usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
+\usepackage[usenames, dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
@@ -19,7 +19,6 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \input{glyphtounicode}
-
 
 %----------FONT OPTIONS----------
 % sans-serif
@@ -32,7 +31,6 @@
 % \usepackage{CormorantGaramond}
 % \usepackage{charter}
 
-
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
@@ -43,8 +41,8 @@
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.2in}
 
 \urlstyle{same}
 
@@ -54,47 +52,53 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
-
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
 % Ensure that generate pdf is machine readable/ATS parsable
-\pdfgentounicode=1
+
+\pdfgentounicode = 1
 
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
-  \item\small{
+  \item
+  \small{
     {#1 \vspace{-2pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}
+  \vspace{-7pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+  \end{tabular*}
+  \vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+  \end{tabular*}
+  \vspace{-7pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListStart}{
+  \begin{itemize}[leftmargin=0.15in, label={}]
+}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
@@ -102,124 +106,116 @@
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \begin{document}
 
 %----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:ameensalim1@gmail.com}{ameensalim1@gmail.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-925-858-5314 \\
-% \end{tabular*}
-
 \begin{center}
-    \textbf{\Huge \scshape Ameen Salim} \\ \vspace{1pt}
-    \small 925-858-5314 $|$ \href{mailto:ameensalim1@gmail.com}{\underline{ameensalim1@gmail.com}} $|$ 
-    \href{https://linkedin.com/in/ameensalim}{\underline{linkedin.com/in/ameensalim/}} $|$
-    \href{https://github.com/ameensalim1}{\underline{github.com/ameensalim1}}
+  \textbf{\Huge \scshape Ameen Salim} \\ \vspace{1pt}
+  \small 925-858-5314 $|$
+  \href{mailto:ameensalim1@gmail.com}{\underline{ameensalim1@gmail.com}} $|$
+  \href{https://linkedin.com/in/ameensalim}{\underline{linkedin.com/in/ameensalim/}}
+  $|$
+  \href{https://github.com/ameensalim1}{\underline{github.com/ameensalim1}}
 \end{center}
-
 
 %-----------EDUCATION-----------
 \section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {University of California, Davis}{Davis, CA}
-      {Bachelor of Science in Computer Science}{Expected June 2025}
-      % \vspace{-5mm}
-      % \resumeSubheading
-      % {}{}
-      % {Master of Science in Computer Science}{Expected June 2026}
+\resumeSubHeadingListStart
+\resumeSubheading
+  {Georgia Institute of Technology}{Atlanta, GA (Remote)}
+  {M.S. in Computer Science}{Expected Graduation: June 2027}
+%\vspace{-4pt} % Reduced space here - handled by main resumeSubheading
+\resumeSubheading
+  {University of California, Davis}{Davis, CA}
+  {B.S. in Computer Science}{June 2025}
+\resumeItemListStart
+\resumeItem
+  {Relevant Coursework: Machine Learning, Deep Learning, Data Structures \& Algorithms, Advanced Algorithms, Operating Systems, Systems Programming, Linear Algebra, Computer Architecture, Scientific Computation}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
 
-        \resumeItemListStart
-        \resumeItem{Relevant Coursework: Data Structures and Algorithms, Operating Systems, Advanced Algorithms, Systems Programming, Linear Algebra, Computer Architecture, Machine Learning, Scientific Computation}
-        \resumeItemListEnd
-  \resumeSubHeadingListEnd
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin = 0.15in, label={}]
+  \small{
+    \item{
+      \textbf{Languages}{: Python, C/C++, SQL, TypeScript} \\
+      \textbf{Core ML/AI}{: PyTorch, scikit-learn, Pandas, NumPy, Transformers, HuggingFace, OpenCV} \\
+      \textbf{Agentic/GenAI Systems}{: LLMs, Retrieval-Augmented Generation (RAG), Agentic AI Systems} \\
+      \textbf{MLOps/Cloud}{: Docker, GCP(GCS, Cloud Run, Vertex AI), AWS (S3), CI/CD (GitHub Actions), RESTful APIs (FastAPI)} \\
+    }
+  }
+\end{itemize}
 
 %-----------EXPERIENCE-----------
 \section{Experience}
-  \resumeSubHeadingListStart
+\resumeSubHeadingListStart
 
-    \resumeSubheading
-      {AI Software Intern}{June 2024 -- September 2024}
-      {PrimisAI} {Los Gatos, CA}
-      \resumeItemListStart
-        \resumeItem{Worked on implementing an AI AutoReview agent that automatically corrects syntax errors, improving code accuracy by 25\%, reducing manual review time by 30\%.}
-        \resumeItem{Designed and implemented benchmark metrics for RAG System, increasing system efficiency by 20\%, reducing processing time, and enhancing retrieval accuracy.}
-        \resumeItem{Engineered and executed a CI/CD pipeline, accelerating API deployment cycles by 40\% and minimizing downtime during updates.}
-}
-    \resumeItemListEnd
+\resumeSubheading
+  {AI Software Engineer Intern}{June 2024 -- September 2024}
+  {PrimisAI}{Los Gatos, CA}
+\resumeItemListStart
+\resumeItem
+  {Enhanced a multi-agent system for RTL code generation by improving agentic orchestration and tool utilization, boosting Verilog generation pass@1 accuracy by \textbf{17\%} (from 60\% to 77\%).}
+\resumeItem
+  {Optimized a textual \textbf{RAG system} by benchmarking and refining the information retrieval pipeline, reducing LLM processing time and improving overall system efficiency by \textbf{20\%}.}
+\resumeItem
+  {Developed a robust CI/CD pipeline using GitHub Actions for automated testing and deployment of ML services, improving developer velocity and reducing release cycle time.}
+\resumeItemListEnd
 
+\resumeSubheading
+  {Software Engineer}{June 2024 -- Present}
+  {MyGenie}{Bay Area, CA}
+\resumeItemListStart
+\resumeItem
+  {Designed and deployed a scalable, \textbf{production-ready ML system} on GCP to automate a 3D avatar generation pipeline, reducing manual effort and accelerating model deployment cycles.}
+\resumeItem
+  {Built GPU-accelerated video processing APIs using Docker and Cloud Run, increasing model training throughput by \textbf{25\%} and cutting data processing time by \textbf{40\%}.}
+\resumeItem
+  {Partnered with the \textbf{MLOps} team to automate post-training model versioning and artifact storage in cloud databases (Postgres, S3), ensuring data consistency and pipeline integrity.}
+\resumeItem
+  {Improved ML training pipeline reliability by over \textbf{90\%} by implementing stateful, context-aware mechanisms that minimize training failures and manual restarts.}
+\resumeItemListEnd
 
-    \resumeSubheading
-      {Technical Project Associate }{October 2023 -- Present}
-      {University of California, Davis}{Davis, CA}
-      \resumeItemListStart
-        \resumeItem{Engineered a Loan Approval Predictor which analyzes financial datasets using factors such as number of assets, cibil score, and credit score and reports an applicants' loan status approval chances}
-        \resumeItem{Leveraged advanced data analytics by integrating Python libraries—Pandas, matPlotLib, Numpy,  and Sci-kit Learn to distill actionable insights from over 100,000 data points.}
-        \resumeItem{Engineered and calibrated two predictive models using machine learning algorithms, which outperformed and achieved a high predictive accuracy of 91.9\% and 89.4\%, substantiated by rigorous validation on diverse datasets.}
-      \resumeItemListEnd
+\resumeSubheading
+  {Software Engineer Associate}{September 2024 -- June 2025}
+  {Artificial Intelligence Student Collective}{Davis, CA}
+\resumeItemListStart
+\resumeItem
+  {Deployed a low-latency (sub-100ms) WebSocket API using FastAPI for a real-time American Sign Language translation model, enabling seamless multi-turn conversationality.}
+\resumeItem
+  {Engineered a computer vision data processing pipeline using OpenCV and MediaPipe, achieving \textbf{95\%} accuracy in hand landmark detection at over \textbf{30 FPS} for robust, real-time model inference.}
+\resumeItem
+  {Optimized video frame encoding to reduce network payload size by \textbf{50\%} while maintaining image fidelity, ensuring scalable and accurate ML inference for downstream applications.}
+\resumeItemListEnd
 
-    \resumeSubheading
-      {Software Engineer}{September 2024 -- Present}
-      {Artificial Intelligence Student Collective}{Davis, CA}
-      \resumeItemListStart
-        \resumeItem{Engineered a Loan Approval Predictor which analyzes financial datasets using factors such as number of assets, cibil score, and credit score and reports an applicants' loan status approval chances}
-        \resumeItem{Leveraged advanced data analytics by integrating Python libraries—Pandas, matPlotLib, Numpy,  and Sci-kit Learn to distill actionable insights from over 100,000 data points.}
-        \resumeItem{Engineered and calibrated two predictive models using machine learning algorithms, which outperformed and achieved a high predictive accuracy of 91.9\% and 89.4\%, substantiated by rigorous validation on diverse datasets.}
-      \resumeItemListEnd
-      
-% -----------Multiple Positions Heading-----------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
-%-------------------------------------------
-
-  \resumeSubHeadingListEnd
-
+\resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
 \section{Projects}
-    \resumeSubHeadingListStart
-        \resumeProjectHeading
-          {\textbf{MyGenie.live} $|$ \emph{Python, GCP, Docker, Flask, PyTorch, OpenCV}}{June 2024 -- Present}
-          \resumeItemListStart
-            \resumeItem{Automated the training pipeline for AI RadNerf model avatars, reducing manual intervention by 50\% and improving time-to-deployment for avatars by 35\%.}
-            \resumeItem{Refined and optimized facial extraction algorithm using OpenCV, achieving a 15\% improvement in extraction accuracy and reducing error rates in face detection processes.}
-            \resumeItem{Engineered and deployed scalable training pipeline on Google Cloud Platform, leveraging Docker containerization and REST APIs, resulting in a 40\% reduction in processing time and a 25\% increase in model throughput.}
-        \resumeItemListEnd
-        \resumeProjectHeading
-          {\textbf{Analyzing Policing Efficiencies in San Francisco} $|$ \emph{Python, Pandas, sci-kitLearn}}{April 2024 -- June 2024}
-          \resumeItemListStart
-            \resumeItem{Managed a group of 4 and collaborated to deploy a machine learning model to optimize police resource allocation by predicting incidents and   processing dataset of 900k+ dispatch records from the San Francisco Police Department, with the goal of reducing response times and enhancing public safety.}
-            \resumeItem{Utilized Python with Pandas, Scikit-learn, and TensorFlow to implement Random Forest and K-means clustering, achieving an MSE of 59.41 and R-squared of 0.996 for monthly incident predictions.}
-          \resumeItemListEnd
-      \resumeProjectHeading
-            {\textbf{RideSync - Ride-Sharing App} $|$ \emph{React-Native, Google Maps API, MongoDB}}{May 2023 -- June 2023}
-            \resumeItemListStart
-              \resumeItem{Developed a ride-sharing app using React-Native with integration of Google Maps API for route matching.}
-              \resumeItem{Added feature for driver scheduling with real-time updates, allowing rides to be scheduled up to 24 hours in advance or initiated for riders within a 0.25-mile radius.}
-              \resumeItem{Integrated accountability features, including driver-rider ratings and real-time location tracking, enhancing commuter safety by 25\%.}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
 
+\resumeProjectHeading
+  {\textbf{Analyzing Policing Efficiencies in San Francisco}
+    $|$ \emph{Python, PyTorch, scikit-learn, Pandas}}{}
+\resumeItemListStart
+\resumeItem
+  {Developed and validated a predictive model to forecast crime incidents using over 900k dispatch records, enabling optimized police resource allocation strategies for the SFPD.}
+\resumeItem
+  {Executed the full ML lifecycle from data exploration with \textbf{Pandas} to model experimentation, implementing Random Forest and K-means models in \textbf{scikit-learn} to achieve an R-squared of \textbf{0.996}.}
+\resumeItemListEnd
 
+\resumeProjectHeading
+  {\textbf{Loan Approval Predictor} $|$ \emph{Python, Pandas, scikit-learn}}{}
+\resumeItemListStart
+\resumeItem
+  {Built a classification model using financial data for over 100k applicants to predict loan approval viability, informing risk assessment processes.}
+\resumeItem
+  {Achieved \textbf{91.9\%} classification accuracy by leveraging \textbf{scikit-learn} for comprehensive feature engineering, hyperparameter tuning, and cross-validation.}
+\resumeItemListEnd
 
-%
-%-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: Python, C/C++, JavaScript, HTML, CSS} \\
-     \textbf{Frameworks \& Technologies}{: React.js, Node.js, Flask, FastAPI, React Native, MongoDB, Express.js, Markdown, pandas, NumPy, Matplotlib, PyTorch, sci-kitlearn, OpenCV, LLMs, Retrieval-Augmented Generation, AI Agents} \\
-     \textbf{Developer Tools}{: Git, Docker, Insomnia, VS Code, Visual Studio, Google Cloud Platform, GitHub CI} \\
-
-    }}
- \end{itemize}
-
+\resumeSubHeadingListEnd
 
 %-------------------------------------------
 \end{document}
+```
