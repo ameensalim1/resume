@@ -1,0 +1,219 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper, 11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\vspace{-6pt}]
+% Ensure that generate pdf is machine readable/ATS parsable
+
+\pdfgentounicode = 1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item
+  \small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}
+  \vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+  \end{tabular*}
+  \vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+  \end{tabular*}
+  \vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{
+  \begin{itemize}[leftmargin=0.15in, label={}]
+}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+  \textbf{\Huge \scshape Ameen Salim} \\ \vspace{1pt}
+  \small 925-858-5314 $|$
+  \href{mailto:ameensalim1@gmail.com}{\underline{ameensalim1@gmail.com}} $|$
+  \href{https://linkedin.com/in/ameensalim}{\underline{linkedin.com/in/ameensalim/}}
+  $|$
+  \href{https://github.com/ameensalim1}{\underline{github.com/ameensalim1}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+  {Georgia Institute of Technology}{Atlanta, GA (Remote)}
+  {M.S. in Computer Science}{Expected Graduation: June 2027}
+\resumeSubheading
+  {University of California, Davis}{Davis, CA}
+  {B.S. in Computer Science}{June 2025}
+\resumeItemListStart
+\resumeItem
+  {Relevant Coursework: Data Structures and Algorithms, Operating Systems, Advanced Algorithms, Systems Programming, Linear Algebra, Computer Architecture, Machine Learning, Scientific Computation, Deep Learning}
+\resumeItem
+  {Participated in Amazon Campus Prep Series 2025}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin = 0.15in, label={}]
+  \small{
+    \item{
+      \textbf{Languages}{: Python(3yrs), JavaScript(2yrs), C/C++(1yrs), SQL} \\
+      \textbf{Software}{: AWS, GCP, Docker, React.js, Node.js, Flask, FastAPI, MongoDB, Express.js, Next.js, NLP, pandas, NumPy, ffmpeg, PyTorch, sci-kitlearn, OpenCV, GitHub CI, LLMs, Retrieval-Augmented Generation, Agentic AI, Git}
+    }
+  }
+\end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {Software Engineer}{June 2024 -- Present}
+  {MyGenie}{Bay Area, CA}
+\resumeItemListStart
+\resumeItem
+  {Building automated AI training pipeline for RadNerf model avatars, replacing manual processes and reducing time-to-deployment.}
+\resumeItem
+  {Engineered video processing API to train videos via GPU-accelerated Google Cloud Run.}
+\resumeItem
+  {Built APIs deployed on GCP using GCS and Cloud Run, enabling seamless video-to-avatar training with a 25\% increase in throughput and a 40\% reduction in processing time.}
+\resumeItem
+  {Optimized facial extraction algorithms by tweaking parameters and adding pixel offsets for better orientation detection, improving accuracy by 15\% and significantly reducing retries in the training process.}
+\resumeItemListEnd
+
+\resumeSubheading
+  {Software Engineer Associate}{September 2024 -- June 2025}
+  {Artificial Intelligence Student Collective}{Davis, CA}
+\resumeItemListStart
+\resumeItem
+  {Architecting and developing WebSocket API backend for real-time ASL translation, achieving sub-100ms latency for end-to-end processing in 5-person engineering team.}
+\resumeItem
+  {Implementing efficient computer vision pipeline using MediaPipe for hand landmark detection, processing 30+ frames per second with 95\% landmark detection accuracy.}
+\resumeItem
+  {Optimized video frame encoding/decoding pipeline reducing payload size while preserving image quality for ML model inference.}
+\resumeItemListEnd
+
+\resumeSubheading
+  {AI Software Engineer Intern}{June 2024 -- September 2024}
+  {PrimisAI}{Los Gatos, CA}
+\resumeItemListStart
+\resumeItem
+  {Debugged and tested a multi-AI agent system for RTL code review and correction, ensuring database retrieval consistency and hardware-specific topic accuracy. Validated retrieval system behavior for FPGA-specific IP catalogs used in 10k+ interactions, improving pass@1 accuracy from 60\% to 77\% in Verilog generation benchmarks.}
+\resumeItem
+  {Benchmarked metrics for RAG Pipeline System, increasing system efficiency by 20\%, reducing processing time, and enhancing retrieval accuracy.}
+\resumeItem
+  {Spearheaded CI/CD pipeline implementation using GitHub Actions, accelerating API release cycles and minimizing downtime during updates.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+  {\textbf{Analyzing Policing Efficiencies in San Francisco}
+    $|$ \emph{Python, TensorFlow, sci-kitLearn}}{}
+\resumeItemListStart
+\resumeItem
+  {Operationalized a machine learning model to optimize police resource allocation by predicting incidents and processing a dataset of 900k+ dispatch records from the San Francisco Police Department, with the goal of reducing response times and enhancing public safety.}
+\resumeItem
+  {Utilized Python with pandas, scikit-learn, and TensorFlow to implement Random Forest and K-means clustering, achieving an MSE of 59.41 and R-squared of 0.996 for monthly incident predictions.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+  {\textbf{Loan Approval Predictor} $|$ \emph{Python, Pandas, sci-kitLearn}}{}
+\resumeItemListStart
+\resumeItem
+  {Used a 100k+ financial dataset to evaluate loan approval chances based on features such as number of assets, CIBIL score, and credit score.}
+\resumeItem
+  {Engineered and validated two predictive machine learning models, achieving accuracies of 91.9\% and 89.4\% through hyperparameter tuning and cross-validation.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
